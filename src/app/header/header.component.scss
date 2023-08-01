@@ -1,0 +1,53 @@
+.small-nav
+{
+    display: block;
+}
+.small-nav-content:hover 
+{
+    color: #E5B559;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.small-nav-icon 
+{
+    color: white;
+}
+.small-nav-icon:hover
+{
+    color: #E5B559;
+}
+
+header{
+    position: fixed;
+    top: 10.3%;
+    left: 0;
+    transition: 0.6s;
+    z-index: 5;
+    width: 100%;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    transition: 0.6s;
+}
+
+header ul li a:hover{
+    color: #E5B559;
+}
+
+.slider-home{
+    background-image: url('6-1.webp');
+    background-size: cover;
+    height: 100vh;
+}

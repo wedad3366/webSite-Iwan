@@ -1,0 +1,41 @@
+footer{
+    background-color: rgb(19, 16, 16);
+}
+
+footer p{
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #CCCCCC;
+    margin-top: 15px;
+}
+
+footer h3{
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+}
+footer ul li 
+{
+    background-color: rgb(19, 16, 16)!important;
+    color: #ccc;
+    font-weight:500;
+    font-size: 13px;
+}
+
+footer ul li .footer-list:hover
+{
+    text-decoration: underline;
+}
+
+.footer-icon
+{
+    color: white;
+}
+
+.footer-icon:hover{
+    color: #E5B559;
+}
