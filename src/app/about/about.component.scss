@@ -1,0 +1,103 @@
+.small-nav
+{
+    display: block;
+}
+.small-nav-content:hover 
+{
+    color: #E5B559;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.small-nav-icon 
+{
+    color: white;
+}
+.small-nav-icon:hover
+{
+    color: #E5B559;
+}
+.slider-home{
+    background-image: url('subheader-1.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+.content-header
+{
+    position: relative;
+    top: 40%;
+    color: white;
+}
+.content-header h2{
+    font-size: 32px;
+    letter-spacing: 5px;
+    padding-right: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #ECEFF3;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.content-header li
+{
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ECEFF3;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+    color: white!important;
+}
+
+//////////////////////////////// (end header (small-nav))
+
+.section-two h3{
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 1.2em;
+    font-size: 30px;
+    color: #eceff3;
+    margin-top: 20px;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+}
+
+.section-two p{
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+    color: #ddd;
+    line-height: 1.8em;
+}
+
+.section-two img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+//////////////////////////////// (end section-two)
+
+.section-three  button 
+{
+    background-color: white;
+    color: #202224;
+    margin-top: 13px;
+    transition: .2s .3s transform;
+}
+
+.section-three button:hover{
+    background-color: #E5B559;
+    color: #ddd;
+    transform: scale(1.2,1.2);
+}
+
+.section-three h2{
+    font-weight: 500;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+}
+
+//////////////////////////////// (end section-three)

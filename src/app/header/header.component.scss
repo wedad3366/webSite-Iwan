@@ -1,22 +1,3 @@
-.small-nav
-{
-    display: block;
-}
-.small-nav-content:hover 
-{
-    color: #E5B559;
-    text-decoration: underline;
-    cursor: pointer;
-}
-.small-nav-icon 
-{
-    color: white;
-}
-.small-nav-icon:hover
-{
-    color: #E5B559;
-}
-
 header{
     position: fixed;
     top: 10.3%;
@@ -46,8 +27,4 @@ header ul li a:hover{
     color: #E5B559;
 }
 
-.slider-home{
-    background-image: url('6-1.webp');
-    background-size: cover;
-    height: 100vh;
-}
+

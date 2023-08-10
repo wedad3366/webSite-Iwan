@@ -1,0 +1,109 @@
+.small-nav
+{
+    display: block;
+}
+.small-nav-content:hover 
+{
+    color: #E5B559;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.small-nav-icon 
+{
+    color: white;
+}
+.small-nav-icon:hover
+{
+    color: #E5B559;
+}
+.slider-home{
+    background-color: #202224;
+    height: 60vh;
+}
+
+.content-header
+{
+    position: relative;
+    top: 40%;
+    color: white;
+}
+.content-header h2{
+    font-size: 32px;
+    letter-spacing: 5px;
+    padding-right: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #ECEFF3;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.content-header li
+{
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ECEFF3;
+}
+
+//////////////////////////////// (end header (small-nav))
+
+.icon
+{
+    background-color: black;
+    padding: 13px;
+    color: white;
+}
+.icon:hover
+{
+    background-color: white;
+    color:#E5B559;
+    cursor: pointer;
+}
+
+.social-icon a i
+{
+   color: white;
+}
+
+.social-icon a i:hover
+{
+    color: #E5B559;
+    cursor: pointer;
+}
+
+.section-two img
+{
+    width: 100%;
+    height: 100%;
+}
+
+//////////////////////////////// (end section-two)
+
+.section-three  button 
+{
+    background-color: white;
+    color: #202224;
+    margin-top: 13px;
+    transition: .2s .3s transform;
+}
+
+.section-three button:hover{
+    background-color: #E5B559;
+    color: #ddd;
+    transform: scale(1.2,1.2);
+}
+
+.section-three h2{
+    font-weight: 500;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    color: white!important;
+}
+
+//////////////////////////////// (end section-three)

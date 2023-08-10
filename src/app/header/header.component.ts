@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 declare var $:any;
 
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,6 +13,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+ 
   }
 
   
@@ -33,7 +35,7 @@ export class HeaderComponent implements OnInit {
   
       $(window).resize(function(){
         let oldwindow=$(window).width()
-        if(oldwindow<=1000)
+        if(oldwindow<=1400)
         {
           $(".small-nav").css("display" , "none");
           $("header").css("top" , "0%");
@@ -70,7 +72,6 @@ export class HeaderComponent implements OnInit {
           )
         }
       })
-     
   
   }
 

@@ -6,13 +6,29 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { VideosComponent } from './videos/videos.component';
+import { ServicesComponent } from './services/services.component';
+import { CollaboratorsComponent } from './collaborators/collaborators.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { ProjectCategoriesComponent } from './project-categories/project-categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    ProjectsComponent,
+    VideosComponent,
+    ServicesComponent,
+    CollaboratorsComponent,
+    ContactComponent,
+    ProjectDetailsComponent,
+    ProjectCategoriesComponent
   ],
   imports: [
     BrowserModule,
