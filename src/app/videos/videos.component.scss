@@ -19,13 +19,13 @@
 .slider-home{
     background-image: url('subheader-1.jpg');
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
 }
 
 .content-header
 {
     position: relative;
-    top: 40%;
+    top: 60%;
     color: white;
 }
 .content-header h2{
@@ -77,3 +77,34 @@
 }
 
 //////////////////////////////// (end section-three)
+@media only screen and (max-width:1280px)
+{
+    .small-nav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1000px)
+{
+    .videos{
+        padding: 10px;
+    }
+    .title
+    {
+        text-align: center;
+        margin-left: 35%;
+    }
+    .breadCrumb{
+        display: none;
+    }
+    .section-three{
+        padding: 60px;
+    }
+    .slider-home {
+        height: 50vh;
+    }
+    .content-header {
+        top: 50%;
+    }
+
+}

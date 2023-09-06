@@ -1,4 +1,6 @@
-<section>
+<app-header></app-header>
+
+<section class="sliderImages">
   <div id="carouselExampleIndicators" class="carousel slide  carousel-fade" data-bs-ride="carousel">
     <!-- <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6,82 +8,55 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div> -->
     <div class="carousel-inner ">
-        <div class="carousel-item active">
-          <img src="assets\6-1.webp" class="d-block w-100" style="height: 100vh;"  alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="assets\33333.webp" class="d-block w-100" style="height: 100vh;"   alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="assets\slider.webp" class="d-block w-100" style="height: 100vh;"  alt="...">
-        </div>
+      <div class="carousel-item active">
+        <img src="assets\main-slider\6-1.webp" class="d-block w-100" style="height: 100%;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets\main-slider\5-1.webp" class="d-block w-100" style="height: 100%;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets\main-slider\slider.webp" class="d-block w-100" style="height: 100%;" alt="...">
+      </div>
     </div>
   </div>
 </section>
 
 <!--end slider-->
 
-<section class="small-nav">
-  <div  style="background: #18191b9e">
-      <div class="container">
-          <div class="text-end fs-6 me-5 pt-2">
-              <a href="#"><i class="small-nav-icon fa-brands fa-facebook-f me-2 p-1"></i></a>
-              <a href="#" class="small-nav-icon text-decoration-none me-2 p-1">in</a>
-              <a href="#"><i class="small-nav-icon fa-brands fa-instagram p-1"></i></a>
-          </div>
-          <div class="row">
-            <div class="col-xl-6">
-                <div class="d-flex justify-content-start">
-                    <div class="p-2 text-white">
-                        <small style="color: #E5B559;"><i class="fa-regular fa-envelope me-1"></i></small>
-                        Email us : <span class="small-nav-content">info@iwandecoration.com</span>
-                    </div>
-                    <div class="p-2 text-white">
-                        Phone : <span class="small-nav-content"> +20 10 222 34 751</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-  </div>
-<hr>
-</section>
-<app-header></app-header>
-
-<!--end (small-big) nav-->
-
 <section class="section-two p-5">
   <div class="container text-center">
     <div class="row justify-content-center">
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 mb-3 ">
-       <div class="show-icon">
-         <i class="icon fa-solid fa-clock "></i>
-         <p class="mt-4">
-           <span class="text-white fs-2 number" data-val="3580">0000</span>
-           <br>
-           <small style="color: #E5B559;">HOURS OF WORKS</small>
-         </p>
-       </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8">
+        <div class="show-icon">
+          <i class="icon fa-solid fa-clock "></i>
+          <p class="mt-4">
+            <span class="text-white fs-2 number" data-val="3580">3580</span>
+            <br>
+            <small style="color: #E5B559;">HOURS OF WORKS</small>
+          </p>
+        </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 mb-3">
-      <div class="show-icon">
+
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8">
+        <div class="show-icon">
           <i class="icon fa-solid fa-bullseye"></i>
           <p class="mt-4">
-            <span class="text-white fs-2 number" data-val="2450">0000</span>
+            <span class="text-white fs-2 number" data-val="2450">2450</span>
             <br>
             <small style="color: #E5B559;">TASKS DONE</small>
           </p>
+        </div>
       </div>
-      </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 mb-3">
-      <div class="show-icon">
+
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8">
+        <div class="show-icon">
           <i class="icon fa-regular fa-face-smile"></i>
           <p class="mt-4">
-            <span class="text-white fs-2 number" data-val="1200">0000</span>
+            <span class="text-white fs-2 number" data-val="1200">1200</span>
             <br>
             <small style="color: #E5B559;">FEEDBACKS</small>
           </p>
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -89,14 +64,15 @@
 
 <!--end section-two-->
 
-<section class="section-three p-5" style="background-color: #efc85e;">
+<section class="section-three p-5" style="background-color: #E5B559;">
   <div class="container text-center">
     <div class="row justify-content-evenly">
       <div class="col-lg-8 col-xl-8 col-md-10 col-sm-12">
         <h2>We love to make you feel more comfort on your home.</h2>
       </div>
-      <div class="col-lg-2 col-xl-2 col-md-2 col-sm-8 mt-2">
-        <button type="button" class="btn text-bold btn-outline-dark">GET QUOTATION > </button>
+      <div class="col-lg-2 col-xl-2 col-md-4 col-sm-12 mt-2">
+
+        <button routerLink="/contact" type="button" class="btn text-bold btn-outline-dark">GET QUOTATION > </button>
       </div>
     </div>
   </div>
@@ -105,873 +81,53 @@
 <!--end section-three-->
 
 <section class="text-white section-four">
-  <div class="row justify-content-center">
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInLeft">
-      <h3 class="mt-5">RESIDENTIAL DESIGN</h3>
-      <p class="text-start mb-5">
-        As a general contracting, finishing and decoration company, we set up many residential projects from
-        construction to interior finishes and designs for decoration
-        The design is done by a strong engineering team with extensive experience that allows speeds of execution and
-        receipt of the highest standards of quality
-        Our team’s focus is on achieving the satisfactory result of all tastes and equating the beauty of the shape and
-        combining with the engineering aspect.
-        All this is achieved through the quality of the ores used, and the ability to integrate and coordinate colors
-        characteristically to get the quality required in the execution and get the taste required for the comfort of
-        our customers.
-        Our team’s focus is on achieving the satisfactory result of all tastes and equating the beauty of the shape and
-        combining with the engineering aspect.
-        All this is achieved through the quality of the ores used, and the ability to integrate and coordinate colors
-        characteristically to get the quality required in the execution and get the taste required for the comfort of
-        our customers.
-      </p>
-    </div>
-    <div class="col-lg-6 col-xl-6 col-md-5 col-sm-12">
-      <img src="assets\resedintial-design-Large.webp">
-    </div>
-  </div>
-  <div class="row justify-content-center" style="background-color: black;">
-    <div class="col-lg-6 col-xl-6 col-md-7 col-sm-12">
-      <img src="assets\Restaurant-design-.webp" style="height: 300px;">
-    </div>
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInRight">
-      <h3 class="mt-5">RESTAURANTS DESIGN</h3>
-      <p class="text-start">
-        Iwan General Contracting, Finishing and Decoration is one of the few companies with years of experience,
-        professional team and high training to do all the ventilation work which includes supply, installation of air
-        conditioning devices, pulling machines and Fresh Air motors, also supply and installation of the fence for
-        airing work and accessories.
-      </p>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInLeft">
-      <h3 class="mt-5">ARCHITECTURAL DESIGN</h3>
-      <p class="text-start mb-5">
-        As a company specializing in the supervision and implementation of architectural and design projects, we offer a
-        comprehensive range of services to ensure that your project is completed to the highest standards and quality
-        required<br>
-        Our team consists of strong, trained labor at the highest level, has enough experience to achieve what satisfy
-        customers.<br>
-        Iwan General Contracting, Decoration and Finishing Company has been working with many big name brands in the
-        market, and their projects have been completed in a very short time with speed of execution and receipt, at an
-        affordable price<br>
-        Our business projects are delivered in 20 days, residential in 2 months, and public projects as soon as
-        possible.<br>
-        We work in order to give quality and professional expertise to distribute kitchen equipment and manufacture
-        furniture for lounge brushes. Residential projects are distinctive for their supervision, implementation and
-        design to suit all tastes
-      </p>
-    </div>
-    <div class="col-lg-5 col-xl-5 col-md-5 col-sm-12">
-      <img src="assets\bb.webp">
-    </div>
-  </div>
-  <div class="row justify-content-center" style="background-color: black;">
-    <div class="col-lg-6 col-xl-6 col-md-7 col-sm-12">
-      <img src="assets\apartment-finishing.webp" style="height: 300px;">
-    </div>
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInRight">
-      <h3 class="mt-5">APARTMENTS FINISHING</h3>
-      <p class="text-start">
-        Iwan finishes up apartments and residential facilities ends with long years of experience in this field, as
-        evidenced by the strength of the team of trained workers at the highest level, which in turn culminates in the
-        achievement of
-        What matters to our customers is to achieve the beauty equation to match the space of each selected unit of
-        colors
-        and ores that reflect the customer’s taste with the highest quality and fastest time to receive the unit
-      </p>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInLeft">
-      <h3 class="mt-5">VILLA FINISHING</h3>
-      <p class="text-start">
-        The finishing of the villas contains many semi-complex details to contain the spaces. Our team has been working
-        with sufficient experience in the market for more than 10 years with the required quality and speed of execution
-        and receipt
-        .
-        External finishes:
-        It is an important stage for what contains an aesthetic element while integrating engineering expertise to
-        produce a stylised harmonious final shape with a high sense of taste, with the ability to attract and give it an
-        element of excellence.
-        Internal finishes:
-        A realistic composition of the villa form is made from within, with the start of the work of extending
-        electricity and plumbing and doing carpentry work, as well as extending the air conditioning systems for all
-        rooms whether split conditioners, nets or central adaptations, along with decorations and colors, selection of
-        ores and installation of ceramics
-      </p>
-    </div>
-    <div class="col-lg-5 col-xl-5 col-md-5 col-sm-12">
-      <img src="assets\villa-finishing.webp">
-    </div>
-  </div>
-  <div class="row justify-content-center" style="background-color: black;">
-    <div class="col-lg-6 col-xl-6 col-md-7 col-sm-12">
-      <img src="assets\e.webp" style="height: 300px;">
-    </div>
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInRight">
-      <h3 class="mt-5">COMMERCIAL DESIGN</h3>
-      <p class="text-start">
-        We offer our clients design consulting, space planning, and furniture selection to create a commercial space
-        that serves our community.
-        Our focus is on high-end furnishings, and we work with top designers, We will help you pick the perfect designer
-        for your commercial project.
-      </p>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInLeft">
-      <h3 class="mt-5">OFFICES FINISHING</h3>
-      <p class="text-start">
-        We specialize in many office finishes between Classic and Modern. And that the reality is highly operational and
-        professional to match the reality with the design.
-        Our team has 10 years experience in the field of administrative office finishing, a highly skilled team to give
-        each office the desired touch, besides reaching the required quality and taking into account the right price for
-        customers
-        Time is an important factor for our company that is quick to execute and receive, especially for large projects
-      </p>
-    </div>
-    <div class="col-lg-5 col-xl-5 col-md-5 col-sm-12">
-      <img src="assets\office-Design_.jpg" style="height: 400px;">
-    </div>
-  </div>
-  <div class="row justify-content-center" style="background-color: black;">
-    <div class="col-lg-5 col-xl-5 col-md-5 col-sm-12">
-      <img src="assets\club_.jpg" style="height: 300px;">
-    </div>
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInRight">
-      <h3 class="mt-5">PUPLIC PROJECTS</h3>
-      <p class="text-start">
-        Our public projects range from design and implementation of swimming pools, VIP halls, party halls, which are
-        based on the ground. We care about the principle of fast-track delivery with the highest accuracy and quality
-        standards required.
-        Our work is crowned by a professional and highly experienced engineering team
-      </p>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInLeft">
-      <h3 class="mt-5">LANDSCAPE DESIGN & FINISHING</h3>
-      <p class="text-start">
-        The landscape design part is what distinguishes finishes and decoration companies, for their craftsmanship and
-        high engineering skill
-        Our team is characterized by specialization, skill mixed with a creative aspect with powerful engineering
-        aspect, and shows the specialization aspect in design and fast execution and receipt.
-        The most important architectural part of our creative touch is within Iwan Contracting, Finishing and
-        Decoration. We focus on it in both landscape and hardcover as well as home garden design
-        The main goal within our company is to exceed our customer expectations and add a different touch to our
-        business.
-      </p>
-    </div>
-    <div class="col-lg-5 col-xl-5 col-md-5 col-sm-12">
-      <img src="assets\PYNMYInNz8D9GsmOeuY9DJLGlM8xdI9lzxPoU_Q_IsU_plaintext_638139707326706755.jpg"
-        style="height: 400px;">
-    </div>
-  </div>
-  <div class="row justify-content-center" style="background-color: black;">
-    <div class="col-lg-6 col-xl-6 col-md-7 col-sm-12">
-      <img src="assets\show-25.jpg" style="height: 300px;">
-    </div>
-    <div class="container col-lg-4 col-xl-4 col-md-6 col-sm-12 wow slideInRight">
-      <h3 class="mt-5">SWIMMING POOL DESIGN & FINISHING</h3>
-      <p class="text-start">
-        wan Company is one of the few companies that have the privilege of working on various public projects with
-        sovereign bodies and within the names of prestigious clubs, because it has a professional team of highly trained
-        forces to design swimming pools Including Olympic, and then head to professional implementation which includes
-        the work of installing a concrete drainage network, installing motors and building a terminal to suit the size
-        and the size of the swimming pool
-      </p>
-    </div>
-  </div>
+  <table class="table table-dark table-borderless">
+    <tbody>
+      <tr *ngFor="let row of allServices; let isOdd = odd ; even as isEven; let i = index;">
+        <td [ngStyle]="{ 'background-color' : (isOdd) ? 'black' : '#202224',
+        'flex-direction' : (isOdd) ? 'row-reverse' : 'row' }" [ngClass]=" isEven ? 'box' : ''">
+          <div class="row justify-content-center">
+            <div class="container col-lg-5 col-xl-5 col-md-12 col-sm-12 m-auto">
+              <h3 class="mt-5">{{row.title}}</h3>
+              <p class="text-start mb-5">
+                {{row.description}}
+              </p>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+              <img src="{{row.image}}">
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <!--end section-four-->
 
 <section class="section-five mt-5 mb-5">
   <div class="container text-center">
-    <div class="row justify-content-center mb-5">
+    <div class="row justify-content-center mb-5" (click)="filterCategory($event)">
       <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 list-section-five">
-        <ul>
-          <li><a href="#">commercial</a></li>
-          <li><a href="#">landscape & Swimming Pool</a></li>
-          <li><a href="#">public projects</a></li>
-          <li><a href="#">Residential</a></li>
+        <ul *ngFor="let item of allCategories ;">
+          <li><button type="button" class="btn me-1" value="{{item.slug}}">{{item.name}}</button></li>
         </ul>
       </div>
-      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4" style="background-color: #E5B559;">
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4" style="background-color: #E5B559;">
         <ul style="background-color: #E5B559;">
-          <li><a href="#" class="text-dark">ALL PROJECTS</a></li>
+          <li>
+            <button type="submit" class="btn text-dark" value="all">ALL PROJECTS</button>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
+    <div class="row justify-content-center projects">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6" *ngFor="let item of allProjects ;">
+        <a routerLink="/project-details/{{item.slug}}">
           <div class="projects-section-five">
-            <img src="assets\projects\1.jpg">
+            <img src="{{item.image}}">
             <div class="name-project">
-              <h5 class="text-center">Abo Rayan Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\2.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Wafflicios 6th of October</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\3.png">
-            <div class="name-project">
-              <h5 class="text-center">waffilicious hadaek elahram</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\4.png">
-            <div class="name-project">
-              <h5 class="text-center">waffilicious cozy</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\5.png">
-            <div class="name-project">
-              <h5 class="text-center">uko</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\6.png">
-            <div class="name-project">
-              <h5 class="text-center">mach cafe</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\7.png">
-            <div class="name-project">
-              <h5 class="text-center">Equal perfumes</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\8.png">
-            <div class="name-project">
-              <h5 class="text-center">beans brew</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\9.jpg">
-            <div class="name-project">
-              <h5 class="text-center"></h5>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\10.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Rehana Plaza</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\11.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Mr Moatasem ( ISOLA Compound )</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\12.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Master Bedroom</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\13.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Wafflicios Zayed</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\14.jpg">
-            <div class="name-project">
-              <h5 class="text-center">shawerma elreem tanta</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\15.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Palm Hills Villa</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\16.jpg">
-            <div class="name-project">
-              <h5 class="text-center">New Cairo Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\17.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Nasr City Apratment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\18.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Eldokki Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\19.jpg">
-            <div class="name-project">
-              <h5 class="text-center">El Obour Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\20.jpg">
-            <div class="name-project">
-              <h5 class="text-center">el Haram Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\21.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Mountain View villa landscape</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\22.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Bait Al Watan</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\23.jpg">
-            <div class="name-project">
-              <h5 class="text-center">SHAWERMA ELREEM Marina</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\24.jpg">
-            <div class="name-project">
-              <h5 class="text-center">SHAWERMA ELREEM al-ahly club</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\25.jpg">
-            <div class="name-project">
-              <h5 class="text-center">SHAWERMA ELREEM Alex</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\26.jpg">
-            <div class="name-project">
-              <h5 class="text-center">SHAWERMA ELREEM zayed</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\27.jpg">
-            <div class="name-project">
-              <h5 class="text-center">SHAWERMA ELREEM MATARIA</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\28.jpg">
-            <div class="name-project">
-              <h5 class="text-center">SHAWERMA ELREEM Alrehab</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\29.jpg">
-            <div class="name-project">
-              <h5 class="text-center">DAR AL ESHARA hall entrance</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\30.jpg">
-            <div class="name-project">
-              <h5 class="text-center">DAR AL ESHARA fountain</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\31.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Dar Al Eshara Elsalam hall</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\32.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Dar Al Eshara Elsalam hall Bathroom</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\33.webp">
-            <div class="name-project">
-              <h5 class="text-center">Dar Al Eshara</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\34.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Daddy’s Meraki Complex</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\35.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Daddy’s El Obour</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\36.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Bait Nagwa</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\37.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Zonzai Asian House</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\38.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Yildiz Café</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\39.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Wafficious</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\40.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Red Sea</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\41.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Bean N Bun</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\42.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Nasr City Duplex</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\43.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Masr ElGedida Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\44.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Hyde Park Duplex Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\45.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Granda – Elsherouk Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\46.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Calma Villa</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\47.jpg">
-            <div class="name-project">
-              <h5 class="text-center">beverly hills Duplex</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\48.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Al-Moqatam Villa</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\49.jpg">
-            <div class="name-project">
-              <h5 class="text-center">5th statment villa</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\50.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Hany Mosa</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\51.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Watania Office</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\52.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Dar Al Eshara Office</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\53.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Iwan Office</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\54.jpg">
-            <div class="name-project">
-              <h5 class="text-center">panda house eldokki</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\55.jpg">
-            <div class="name-project">
-              <h5 class="text-center">panda house auc</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\56.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Les dames elsherouk</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\57.jpg">
-            <div class="name-project">
-              <h5 class="text-center">les dames Nasr city</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\58.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Villa Ren – Elsherouk</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\59.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Villa 26 B</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\60.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Sun Capital Duplex</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-2">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\62.jpg">
-            <div class="name-project">
-              <h5 class="text-center">Hyde Park Apartment</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\63.jpg">
-            <div class="name-project">
-              <h5 class="text-center">villa el shorouk</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-        <a routerLink="/project-details">
-          <div class="projects-section-five">
-            <img src="assets\projects\64.jpg">
-            <div class="name-project">
-              <h5 class="text-center">HEART ATTACK el-mataria</h5>
+              <h5 class="text-center">{{item.name}}</h5>
             </div>
           </div>
         </a>
@@ -987,60 +143,60 @@
     <h2>
       Why choose iwan?
     </h2>
-    <div class="row justify-content-center text-start mt-4">
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-       <div class="d-flex justify-content-center show-icon">
-         <div class="p-2">
-           <span style="color:#E5B559; font-size: 48px;"><i class="fa-solid fa-pen-ruler"></i></span>
-         </div>
-         <div class="p-2">
-           <p>
-             WE CREATE A DESIGN ON PAPER OR 3D BEFORE THE CONTRACTING.
-           </p>
-         </div>
-       </div>
-      </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+    <div class="row justify-content-center text-start mt-4 mb-4">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 icon-sec-six m-auto">
         <div class="d-flex justify-content-center show-icon">
-          <div class="p-2 ">
+          <div class="p-2 m-auto">
+            <span style="color:#E5B559; font-size: 48px;"><i class="fa-solid fa-pen-ruler"></i></span>
+          </div>
+          <div class="p-2">
+            <p>
+              WE CREATE A DESIGN ON PAPER OR 3D BEFORE THE CONTRACTING.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 icon-sec-six m-auto">
+        <div class="d-flex justify-content-center show-icon">
+          <div class="p-2 m-auto">
             <span style="color:#E5B559; font-size: 48px;"><i class="fa-solid fa-lightbulb"></i></span>
           </div>
           <div class="p-2">
-            <p >
+            <p>
               WE MAKE EVERYTHING IN YOUR MIND A REALITY.
             </p>
           </div>
         </div>
-       </div>
-       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 icon-sec-six m-auto">
         <div class="d-flex justify-content-center show-icon">
-          <div class="p-2">
+          <div class="p-2 m-auto">
             <span style="color:#E5B559; font-size: 48px;"><i class="fa-regular fa-star"></i></span>
           </div>
           <div class="p-2">
-            <p >
+            <p>
               WE USE THE BEST ELECTRONIC EQUIPMENT IN THE DESIGN.
             </p>
           </div>
         </div>
-       </div>
+      </div>
     </div>
     <div class="row justify-content-center text-start">
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-       <div class="d-flex justify-content-start show-icon">
-         <div class="p-2">
-           <span style="color:#E5B559; font-size: 48px;"><i class="fa-regular fa-clock"></i></span>
-         </div>
-         <div class="p-2">
-           <p>
-            WE PROVIDE THE BEST TIME FOR RECEIVING.
-           </p>
-         </div>
-       </div>
-      </div>
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 icon-sec-six m-auto">
         <div class="d-flex justify-content-start show-icon">
+          <div class="p-2 m-auto">
+            <span style="color:#E5B559; font-size: 48px;"><i class="fa-regular fa-clock"></i></span>
+          </div>
           <div class="p-2">
+            <p>
+              WE PROVIDE THE BEST TIME FOR RECEIVING.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 icon-sec-six m-auto">
+        <div class="d-flex justify-content-start show-icon">
+          <div class="p-2 mt-auto">
             <span style="color:#E5B559; font-size: 48px;"><i class="fa-regular fa-face-smile"></i></span>
           </div>
           <div class="p-2">
@@ -1049,10 +205,10 @@
             </p>
           </div>
         </div>
-       </div>
-       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 icon-sec-six m-auto">
         <div class="d-flex justify-content-center show-icon">
-          <div class="p-2">
+          <div class="p-2 m-auto">
             <span style="color:#E5B559; font-size: 48px;"><i class="fas fa-chart-pie"></i></span>
           </div>
           <div class="p-2">
@@ -1061,130 +217,98 @@
             </p>
           </div>
         </div>
-       </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!--end section-six-->
 
-<section class="slider-section mb-5 mt-5">
+<section class="slider-section mb-5 mt-5 position-relative">
   <div class="container text-center">
-    <h2 class="mb-3">Collaborators</h2>
-    <div class="row justify-content-center mb-5">
-        <div id="carouselExampleAutoplaying" class="carousel slide col-xl-3 col-lg-3 col-md-6 col-sm-8" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets\slider-section\01-310x310-1.jpg" class="d-block w-100" alt="...">
+    <h2 class="mb-5">Collaborators</h2>
+    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active mb-4 pb-4">
+          <div class="row justify-content-center ">
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\01-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\02-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\03-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\3-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\02-310x310-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item mb-4 pb-4">
+          <div class="row justify-content-center">
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\04-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\05-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\5-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\06-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\03-310x310-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item mb-4 pb-4">
+          <div class="row justify-content-center">
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\07-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\08-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\09-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\10-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\3-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\04-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\05-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\3ئ-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\06-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\07-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\08-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\09-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\5ء-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\10-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\11-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\12-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\13-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\14-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\15-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\16-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\17-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\18-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\19-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\20-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\21-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\22-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\23-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\24-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\25-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\26-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\27-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\28-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\88-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\136067008_166815085188488_2717686369504094287_n-310x310-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets\slider-section\سي-310x310-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item mb-4 pb-4">
+          <div class="row justify-content-center">
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\11-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\12-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\13-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 slider">
+              <img src="assets\collaborators\14-310x310-1.jpg" style="width: 100%; height: 100%;">
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
-          <button type="button" class="btn btn-outline-light w-50" routerLink="/collaborators">See More</button>
-        </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+        <button type="button" class="btn btn-outline-light w-50" routerLink="/collaborators">See More</button>
+      </div>
     </div>
   </div>
+
 </section>
 
 <!--end section-of-slider-->
@@ -1204,7 +328,10 @@
 <section>
   <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.8724993273327!2d31.31351152491615!3d29.983094021475758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583925cd01df83%3A0xf6fb29ccc9c57136!2z2KXZitmI2KfZhiDZhNmE2YXZgtin2YjZhNin2Kog2YjYp9mE2KrZiNix2YrYr9in2Ko!5e0!3m2!1sar!2seg!4v1690886771356!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.8724993273327!2d31.31351152491615!3d29.983094021475758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583925cd01df83%3A0xf6fb29ccc9c57136!2z2KXZitmI2KfZhiDZhNmE2YXZgtin2YjZhNin2Kog2YjYp9mE2KrZiNix2YrYr9in2Ko!5e0!3m2!1sar!2seg!4v1690886771356!5m2!1sar!2seg"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
@@ -1216,27 +343,28 @@
     <h2>
       Talk with our sales team
     </h2>
-    <div class="row justify-content-center mt-4">
-      <div class="col-xl-3 col-lg-3 col-md-6 mb-3">
-        <input type="text" class="form-control" placeholder="Your Name">
+    <form [formGroup]="createContactForm" (ngSubmit)="contactUs(createContactForm)">
+      <div class="row justify-content-center mt-4">
+        <div class="col-xl-3 col-lg-3 col-md-6 mb-3">
+          <input type="text" formControlName="name" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 mb-3">
+          <input type="number" class="form-control" formControlName="phone" placeholder="Phone Number">
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 mb-3">
+          <input type="text" class="form-control" formControlName="inquiry" placeholder="Your Inquiry"
+            aria-describedby="basic-addon1">
+        </div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 mb-3">
-        <input type="text" class="form-control" placeholder="Phone Number">
+      <div class="row justify-content-center">
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+          <button type="submit" value="send" class="btn">Send</button>
+        </div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 mb-3">
-        <input type="text" class="form-control" placeholder="Your Inquiry" aria-describedby="basic-addon1">
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-        <button type="button" class="btn">Send</button>
-      </div>
-    </div>
+    </form>
   </div>
 </section>
 
 <!--end section-eight-->
 
 <app-footer></app-footer>
-
-

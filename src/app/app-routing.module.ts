@@ -18,8 +18,8 @@ const routes: Routes = [
   {path:"projects" , component:ProjectsComponent},
   {path:"services" , component:ServicesComponent},
   {path:"videos" , component:VideosComponent},
-  {path:"project-details" , component:ProjectDetailsComponent},
-  {path:"project-category" , component:ProjectCategoriesComponent},
+  {path:"project-details/:slug" , component:ProjectDetailsComponent},
+  {path:"project-category/:slug" , component:ProjectCategoriesComponent},
   {path:"**" , component:HomeComponent}
 ];
 

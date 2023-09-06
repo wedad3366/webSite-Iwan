@@ -19,13 +19,13 @@
 .slider-home{
     background-image: url('subheader-1.jpg');
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
 }
 
 .content-header
 {
     position: relative;
-    top: 40%;
+    top: 60%;
     color: white;
 }
 .content-header h2{
@@ -51,36 +51,88 @@
 
 //////////////////////////////// (end header (small-nav))
 
-.section-two img
+.projects-section-two
+{
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.projects-section-two img
 {
     width: 100%;
     height: 100%;
+    transition: .3s .5s transform;
+}
+
+.name-project
+{
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+    transition: .3s opacity;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(17, 17, 17, 0.9);
+}
+
+.projects-section-two:hover .name-project
+{
+    opacity: 1;
+}
+
+.projects-section-two:hover img{
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+}
+
+.name-project h5{
+    color:#E5B559 ;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 25%;
+    position: relative;
+    left: 150%;
+    transition: 1s left;
+}
+
+.projects-section-two:hover h5{
+    left: 0%;
 }
 
 
 //////////////////////////////// (end section-two)
 
-.section-three  button 
+
+@media only screen and (max-width:1280px)
 {
-    background-color: white;
-    color: #202224;
-    margin-top: 13px;
-    transition: .2s .3s transform;
+    .small-nav{
+        display: none;
+    }
 }
 
-.section-three button:hover{
-    background-color: #E5B559;
-    color: #ddd;
-    transform: scale(1.2,1.2);
+@media only screen and (max-width:1000px)
+{
+    .section-two
+    {
+        padding: 25px;
+    }
+    .title
+    {
+        text-align: center;
+        margin-left: 10%;
+    }
+    .breadCrumb{
+        display: none;
+    }
+    .slider-home {
+        height: 50vh;
+    }
+    .content-header {
+        top: 50%;
+    }
 }
-
-.section-three h2{
-    font-weight: 500;
-    line-height: 1.2em;
-    color: #ffffff;
-    font-size: 30px;
-    text-align: center;
-    font-family: "Dosis", Arial, Helvetica, sans-serif;
-}
-
-//////////////////////////////// (end section-three)

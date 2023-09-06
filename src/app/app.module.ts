@@ -14,6 +14,9 @@ import { CollaboratorsComponent } from './collaborators/collaborators.component'
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ProjectCategoriesComponent } from './project-categories/project-categories.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import { ProjectCategoriesComponent } from './project-categories/project-categor
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

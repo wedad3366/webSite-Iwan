@@ -3,17 +3,53 @@
     position: fixed;
     left: 3%;
     bottom: 2%;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.chat .contact{
+    background-color: white;
+    height: 30px;
+    width: 90px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 .button-up
 {
     position: fixed;
-    right: 3%;
+    right: 4%;
     bottom: 2%;
     display: none;
     cursor: pointer;
-<<<<<<< HEAD
+    z-index: 7;
 }
-=======
+
+@media only screen and (max-width:1000px)
+{
+    .chat
+    {
+        left:5%;
+        bottom: 3%;
+    }
+    .button-up
+    {
+        right: 7%;
+        bottom: 3%;
+    }
 }
->>>>>>> c0531a4d6285e5825b5d634d12fb4f9a9585e7a4
+
+
+
+
+

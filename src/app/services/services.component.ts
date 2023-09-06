@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { ServicesService } from '../services.service';
 
 
 @Component({
@@ -9,7 +11,14 @@ import { NgwWowService } from 'ngx-wow';
 })
 export class ServicesComponent implements OnInit {
 
-  constructor(private wowService:NgwWowService) { 
+  createContactForm=new FormGroup({
+    name:new FormControl(''),
+    phone:new FormControl(''),
+    inquiry:new FormControl('')
+  })
+
+  allServices:any=[]
+  constructor(private wowService:NgwWowService , private _service:ServicesService) { 
     this.wowService.init(
       {
         boxClass:     'wow',      // animated element css class (default is wow)
@@ -23,5 +32,32 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  ngAfterViewInit()
+  {
+    this._service.getAllServices().subscribe(
+      data =>
+      {
+        this.allServices=data 
+        console.log(this.allServices)
+      }
+    )
+  }
+dataOfForm:any 
+  contactUs(data:any)
+  {
+    this.dataOfForm=data.value
+    this._service.createContactForm(this.dataOfForm).subscribe(data=>{
+      console.log(this.dataOfForm)
+      alert("your inquiry send")
+    }
+    ,
+     error =>
+    {
+      alert("error")
+    }
+    )
+  }
+
 
 }

@@ -1,38 +1,35 @@
-.small-nav
-{
+.small-nav {
     display: block;
     position: absolute;
     top: 0%;
     z-index: 5;
     width: 100%;
 }
-.small-nav-content:hover 
-{
+
+.small-nav-content:hover {
     color: #E5B559;
     text-decoration: underline;
     cursor: pointer;
 }
-.small-nav-icon 
-{
+
+.small-nav-icon {
     color: white;
 }
-.small-nav-icon:hover
-{
+
+.small-nav-icon:hover {
     color: #E5B559;
 }
 
 
 //////////////////////////////// (end header (small-nav))
 
-.section-two
-{
+.section-two {
     background-image: url('bg-13.webp');
     background-size: cover;
     overflow: hidden;
 }
 
-.icon
-{
+.icon {
     color: #E5B559;
     display: block;
     font-size: 60px;
@@ -50,15 +47,19 @@
 }
 
 @keyframes animate {
-    0%{top:100%}
-    100%{top:0%}
+    0% {
+        top: 100%
+    }
+
+    100% {
+        top: 0%
+    }
 }
 
 
 //////////////////////////////// (end section-two)
 
-.section-three h2 
-{
+.section-three h2 {
     font-weight: 500;
     margin-bottom: 30px;
     line-height: 1.2em;
@@ -67,7 +68,7 @@
 
 //////////////////////////////// (end section-three)
 
-.section-four h3{
+.section-four h3 {
     color: #E5B559;
     margin-top: 0;
     font-size: 18px;
@@ -77,65 +78,70 @@
     font-family: "Dosis", Arial, Helvetica, sans-serif;
 }
 
-.section-four p{
-    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+.section-four p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 700;
     color: #ddd;
     line-height: 2.1em;
 }
 
-.section-four img 
-{
+.section-four img {
     width: 100%;
     height: 100%;
 }
 
+
 //////////////////////////////// (end section-four)
+
+.projects {
+    padding: 70px;
+}
 
 .section-five ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #202224;}
-  
+    background-color: #202224;
+    float: left;
+}
+
 .section-five li {
     float: left;
 }
-  
-.section-five  li a {
+
+.section-five li button {
     display: block;
     color: #888;
     padding: 10px;
     text-decoration: none;
     font-size: 11px;
     letter-spacing: 3px;
-    font-weight: 400;
+    font-weight: 400px;
     line-height: 1.8em;
     text-align: center;
+    float: left;
 }
-  
-.list-section-five  li a:hover {
+
+.list-section-five li button:hover {
     background-color: #333333;
 }
 
-.projects-section-five
-{
+.projects-section-five {
     position: relative;
     overflow: hidden;
     height: 250px;
     margin-bottom: 20px;
 }
-.projects-section-five img
-{
+
+.projects-section-five img {
     width: 100%;
     height: 100%;
     transition: .3s .5s transform;
 }
 
-.name-project
-{
+.name-project {
     position: absolute;
     top: 0%;
     opacity: 0;
@@ -146,18 +152,17 @@
     background: rgba(17, 17, 17, 0.9);
 }
 
-.projects-section-five:hover .name-project
-{
+.projects-section-five:hover .name-project {
     opacity: 1;
 }
 
-.projects-section-five:hover img{
+.projects-section-five:hover img {
     cursor: pointer;
-    transform: scale(1.5,1.5);
+    transform: scale(1.5, 1.5);
 }
 
-.name-project h5{
-    color:#E5B559 ;
+.name-project h5 {
+    color: #E5B559;
     font-size: 11px;
     text-align: center;
     text-transform: uppercase;
@@ -169,18 +174,20 @@
     transition: 1s left;
 }
 
-.projects-section-five:hover h5{
+.projects-section-five:hover h5 {
     left: 0%;
 }
 
 //////////////////////////////// (end section-five)
 
-.section-six
-{
+.section-six {
     background-image: url('bg-13.webp');
 }
-.section-six , .section-eight , .slider-section h2{
-    font-weight: 500;
+
+.section-six,
+.section-eight,
+.slider-section h2 {
+    font-weight: 500px;
     line-height: 1.2em;
     color: #ffffff;
     font-size: 30px;
@@ -188,28 +195,27 @@
     font-family: "Dosis", Arial, Helvetica, sans-serif;
 }
 
-.section-six p{
+.section-six p {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 400px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #eceff3;
+    margin: auto;
     font-family: "Dosis", Arial, Helvetica, sans-serif;
 }
 
 //////////////////////////////// (end section-six)
 
-.section-seven 
-{
+.section-seven {
     background-image: url('http://demo.oceanthemes.net/archi/wp-content/uploads/2016/12/bg-22.jpg?id=1247');
     background-size: cover;
     padding-top: 4%;
     padding-bottom: 4%;
 }
 
-.section-seven button
-{
-    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+.section-seven button {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 500;
     line-height: 1.8em;
@@ -217,18 +223,54 @@
 
 //////////////////////////////// (end section-seven)
 
-.section-eight  button 
-{
+.section-eight button {
     background-color: white;
     color: #202224;
     margin-top: 13px;
     transition: .2s .3s transform;
 }
 
-.section-eight button:hover{
+.section-eight button:hover {
     background-color: #E5B559;
     color: #ddd;
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 
 //////////////////////////////// (end section-eight)
+
+@media only screen and (max-width:1000px) {
+    .sliderImages {
+        margin-bottom: 15%;
+    }
+
+    .section-four {
+        padding: 25px;
+    }
+
+    .section-five {
+        padding: 25px;
+    }
+
+    .projects {
+        padding: 10px;
+    }
+
+    .section-eight {
+        padding: 60px;
+    }
+
+    .slider-section img {
+        width: 60% !important;
+        height: 80% !important;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .icon-sec-six
+    {
+        margin-bottom: 20px!important;
+    }
+
+}
